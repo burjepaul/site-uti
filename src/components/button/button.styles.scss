@@ -1,0 +1,39 @@
+.button-container1{
+    background-color: var(--color-title);
+    font-size: var(--step-1);
+    width: fit-content;
+    border-radius: 40px 40px;
+    padding: 12% 20%;
+    display: flex;
+    justify-content: space-around;
+    
+    .button-text{
+        color:var(--color-dark);
+        margin: 0;
+    }
+
+    .arrow{
+        color:var(--color-dark);
+        padding-left: 7%;
+    }
+}
+
+.button-container2{
+    font-size: var(--step-1);
+    width: fit-content;
+    border-radius: 40px 40px;
+    padding: 12% 10%;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid var(--color-title);
+    
+    .button-text{
+        color:var(--color-title);
+        margin: 0;
+    }
+
+    .arrow{
+        color:var(--color-title);
+        padding-left: 4%;
+    }
+}
