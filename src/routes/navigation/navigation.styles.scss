@@ -1,5 +1,5 @@
 .navigation {
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 0 10%;
     margin: auto;
     display: flex;
@@ -16,7 +16,7 @@
         // background-repeat: no-repeat; /* Do not repeat the image */
         // background-size: cover; /* Resize the background image to cover the entire container */
         text-decoration: none;
-        font-size: var(--step-2);
+        font-size: var(--step-1);
         color: var(--color-title);
         .logo-text{
           font-family:'Oxygen','Gill Sans', 'Gill Sans MT';
@@ -33,11 +33,11 @@
       
 
       .nav-link {
-        margin: 5% 1%;
+        margin-top:10vh;
         padding: 8px 20px;
         cursor: pointer;
         color: var(--color-title);
-        font-size: var(--step-2);
+        font-size: var(--step-1);
         white-space: nowrap;
         border-radius: 3px;
         transition: 0.75s;
@@ -55,7 +55,7 @@
       padding: 8px 20px;
       cursor: pointer;
       color: var(--color-title);
-      font-size: var(--step-2);
+      font-size: var(--step-1);
       white-space: nowrap;
       border-radius: 3px;
       transition: 0.75s;

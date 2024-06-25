@@ -5,4 +5,43 @@
     margin-top: -5vh;
     background-size: cover;
     background-position: center center;
+
+    .hero-content{
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-title);
+        font-size: var(--step-3);
+        width: 25%;
+        display: block;
+        
+        h2{
+            font-weight: normal;
+            display: block;
+        }
+    }
+    
+    .hero-button{
+        transition: 0.75s;
+        width: 10vw;
+        
+        .nav-link-contact{
+            cursor: pointer;
+            color: var(--color-title);
+            font-size: var(--step-1);
+            white-space: nowrap;
+            border-radius: 3px;
+            text-decoration: none;
+            text-shadow: rgb(0, 0, 0) 2px 2px 13px;
+        }
+
+    }
+    .hero-button:hover{
+        color: var(--color-title);
+        transform: scale(1.2)
+      }
 }
