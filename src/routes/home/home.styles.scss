@@ -45,3 +45,18 @@
         transform: scale(1.2)
       }
 }
+
+@media screen and (max-width: 600px) {
+
+    .hero-container{
+        .hero-content{
+            
+            width: 55%;
+            font-size: var(--step-4);
+            h2{
+                font-weight: normal;
+                display: block;
+            }
+        }
+    }
+}
