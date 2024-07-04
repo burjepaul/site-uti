@@ -1,0 +1,28 @@
+.circle-of-dots {
+    position: relative;
+  }
+  
+  .dot {
+    position: absolute;
+    background-color: var(--color-text);
+    border-radius: 40%;
+    animation: spin 10s linear infinite;
+}
+  
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+      
+    }
+  
+    50%{
+        scale: 1.8;
+    }
+  
+    100% {
+      transform: rotate(360deg);
+      
+    }
+  }
+  

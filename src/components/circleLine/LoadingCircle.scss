@@ -1,0 +1,47 @@
+.loading-circle-container {
+  position: relative;
+  width: 50vw;
+  height: 50vh;
+  transform: translate(-33%, -33%);
+  overflow: hidden;
+  
+  .loading-circle {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    animation: spin1 5s linear infinite;
+    
+    .circle-bg {
+      fill: none;
+      stroke: rgba(255, 0, 0, 0);
+      stroke-width: 0.8;
+    }
+    
+    .circle-fg {
+      fill: none;
+      stroke: var(--color-title);
+      stroke-width: 0.3;
+      stroke-linecap: round;
+      transition: stroke-dasharray 0.3s;
+    }
+  }
+  
+  .percentage-label {
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+  
+@keyframes spin1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50%{
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
