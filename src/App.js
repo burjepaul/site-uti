@@ -17,16 +17,15 @@ function App() {
   }, [])
 
   return (
-    <LoadingBar/>
-    // <>
-    //   {isLoading ? <LoadingBar/> : 
-    //   <Routes>
-    //     <Route path="/" element={<Navigation/>}>
-    //       <Route index element={<Home/>}/>
-    //     </Route>
-    //   </Routes>
-    //   }
-    // </>
+    <>
+      {isLoading ? <LoadingBar/> : 
+      <Routes>
+        <Route path="/" element={<Navigation/>}>
+          <Route index element={<Home/>}/>
+        </Route>
+      </Routes>
+      }
+    </>
   );
 }
 
