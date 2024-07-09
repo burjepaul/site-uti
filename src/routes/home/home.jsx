@@ -2,6 +2,7 @@ import React from 'react'
 import './home.styles.scss'
 import Button from '../../components/button/button'
 import { Link } from "react-router-dom"
+import Shield from '../../assets/scut.png'
 
 const Home = () => {
     return (
@@ -20,6 +21,63 @@ const Home = () => {
 
 
         </div>
+        <div className='shield-container'>
+          
+          <div className='shield-text'>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
+            </h2>
+          </div>
+          <div className='shield-img-container'>
+            <img className='shield-img' src={Shield} alt='shield'/>
+          </div>
+
+        </div>
+          <div className='shield-text'>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
+            </h2>
+          </div>
+          <div className='shield-text'>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
+            </h2>
+          </div>
+          <div className='shield-text'>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
+            </h2>
+          </div>
+          <div className='shield-text'>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
+            </h2>
+          </div>
+          <div className='shield-text'>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
+            </h2>
+          </div>
+          <div className='shield-text'>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
+            </h2>
+          </div>
+          <div className='shield-text'>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
+            </h2>
+          </div>
+          <div className='shield-text'>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
+            </h2>
+          </div>
+          <div className='shield-text'>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
+            </h2>
+          </div>
       </div>
     )
   }

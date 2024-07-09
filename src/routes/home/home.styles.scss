@@ -1,62 +1,120 @@
-.hero-container{
+.home-container{
     background-image:url('../../assets/hero-img.jpg');
-    height: 100vh;
-    width: 100vw;
-    margin-top: -5vh;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
+    overflow-x: hidden;
 
-    .hero-content{
-        position: absolute;
-        top: 50%;
-        right: 15%;
-        transform: translateY(-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--color-title);
-        font-size: var(--step-3);
-        width: 25%;
-        display: block;
-        
-        h2{
-            font-weight: normal;
-            display: block;
-        }
-    }
     
-    .hero-button{
-        transition: 0.75s;
-        width: 10vw;
-        
-        .nav-link-contact{
-            cursor: pointer;
-            color: var(--color-title);
-            font-size: var(--step-1);
-            white-space: nowrap;
-            border-radius: 3px;
-            text-decoration: none;
-            text-shadow: rgb(0, 0, 0) 2px 2px 13px;
-        }
-
-    }
-    .hero-button:hover{
-        color: var(--color-title);
-        transform: scale(1.2)
-      }
-}
-
-@media screen and (max-width: 600px) {
-
     .hero-container{
+        max-width: 1400px;
+        height: 100vh;
+        width: 100vw;
+        margin-top: -5vh;
+        
         .hero-content{
+            position: absolute;
+            top: 50%;
+            right: 15%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-title);
+            font-size: var(--step-3);
+            width: 25%;
+            display: block;
             
-            width: 55%;
-            font-size: var(--step-4);
             h2{
                 font-weight: normal;
                 display: block;
             }
         }
+        
+        .hero-button{
+            transition: 0.75s;
+            width: 10vw;
+            
+            .nav-link-contact{
+                cursor: pointer;
+                color: var(--color-title);
+                font-size: var(--step-1);
+                white-space: nowrap;
+                border-radius: 3px;
+                text-decoration: none;
+                text-shadow: rgb(0, 0, 0) 2px 2px 13px;
+            }
+            
+        }
+        .hero-button:hover{
+            color: var(--color-title);
+            transform: scale(1.2)
+        }
+    }
+
+    .shield-container{
+        display: flex;
+        max-width: 1400px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        .shield-text{
+            margin-left: 8%;
+            font-weight: normal;
+            color: var(--color-title);
+            font-size: var(--step-2);
+        }
+        
+        .shield-img-container{
+            margin-left: 20%;
+            .shield-img{
+                position: relative;
+                width: 160%;
+                rotate: 5deg;
+                filter:drop-shadow(0px 0px 10px var(--color-text));
+            }
+        }
+    }
+}
+    
+@media screen and (max-width: 600px) {
+    .home-container{
+        .hero-container{
+            .hero-content{
+                
+                width: 55%;
+                font-size: var(--step-4);
+                h2{
+                    font-weight: normal;
+                    display: block;
+                }
+            }
+        }
+        
+        .shield-container{
+            display: block;
+            background-image:url('../../assets/scut.png');
+            background-size:contain;
+            background-repeat:no-repeat;
+            background-position: center;
+            height: 50vh;
+            margin-top: -20%;
+            .shield-text{
+                width: 60%;
+                margin: auto;
+                padding-top: 10%;
+            }
+            
+            .shield-img-container{
+                display: none;
+                margin-left: 0%;
+                .shield-img{
+                    position: absolute;
+                    margin: -20% auto;
+                    width: 100%;
+                }
+            }
+        }
+        
     }
 }
