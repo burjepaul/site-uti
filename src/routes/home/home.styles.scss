@@ -75,6 +75,29 @@
             }
         }
     }
+
+    .suport-container{
+        display: flex;
+        max-width: 1400px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        .suport-text{
+            margin-left: 8%;
+            font-weight: normal;
+            color: var(--color-title);
+            font-size: var(--step-2);
+        }
+        
+        .suport-img-container{
+            margin-right: 20%;
+            .suport-img{
+                position: relative;
+                width: 80%;
+                filter:drop-shadow(0px 0px 10px var(--color-text));
+            }
+        }
+    }
 }
     
 @media screen and (max-width: 600px) {
@@ -109,6 +132,30 @@
                 display: none;
                 margin-left: 0%;
                 .shield-img{
+                    position: absolute;
+                    margin: -20% auto;
+                    width: 100%;
+                }
+            }
+        }
+        .suport-container{
+            display: block;
+            background-image:url('../../assets/suport-lumanari.png');
+            background-size:contain;
+            background-repeat:no-repeat;
+            background-position: center;
+            height: 50vh;
+            margin-top: 20%;
+            .suport-text{
+                width: 60%;
+                margin: auto;
+                padding-top: 10%;
+            }
+            
+            .suport-img-container{
+                display: none;
+                margin-left: 0%;
+                .suport-img{
                     position: absolute;
                     margin: -20% auto;
                     width: 100%;

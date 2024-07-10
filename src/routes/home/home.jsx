@@ -3,6 +3,7 @@ import './home.styles.scss'
 import Button from '../../components/button/button'
 import { Link } from "react-router-dom"
 import Shield from '../../assets/scut.png'
+import Suport from '../../assets/suport-lumanari.png'
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
 
 
         </div>
+
         <div className='shield-container'>
           
           <div className='shield-text'>
@@ -31,53 +33,29 @@ const Home = () => {
           <div className='shield-img-container'>
             <img className='shield-img' src={Shield} alt='shield'/>
           </div>
-
+          <p>1</p>
         </div>
-          <div className='shield-text'>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
-            </h2>
+
+        <div className='suport-container'>
+          
+          <div className='suport-img-container'>
+          <img className='suport-img' src={Suport} alt='suport'/>
           </div>
-          <div className='shield-text'>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
-            </h2>
+          <div className='suport-text'>
+          <h2>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
+          </h2>
           </div>
-          <div className='shield-text'>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
-            </h2>
+          <p>1</p>
+          
           </div>
-          <div className='shield-text'>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
-            </h2>
-          </div>
-          <div className='shield-text'>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
-            </h2>
-          </div>
-          <div className='shield-text'>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
-            </h2>
-          </div>
-          <div className='shield-text'>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
-            </h2>
-          </div>
-          <div className='shield-text'>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
-            </h2>
-          </div>
-          <div className='shield-text'>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
-            </h2>
-          </div>
+       
+        <div className='shield-text'>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ad!
+          </h2>
+        </div>
+  
       </div>
     )
   }
